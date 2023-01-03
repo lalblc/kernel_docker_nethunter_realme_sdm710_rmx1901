@@ -36,6 +36,6 @@ STRIP=llvm-strip \
 NM=llvm-nm \
 2>&1 | tee error.log
 ```
-最后在out/arch/arm64/boot下取得kernel（Image.gz-dtb/Image.gz/Image）  
+最后在out/arch/arm64/boot下取得kernel（Image.gz-dtb）  
 
 如果目录下没有kernel则说明编译时出现了错误，那么请查看kernel原始码目录的error.log找到报错部分并使用搜索引擎查找解决方案
