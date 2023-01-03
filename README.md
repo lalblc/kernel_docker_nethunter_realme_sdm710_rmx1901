@@ -6,7 +6,7 @@
 2. 3616439505@qq.com
 3. 2234339463@qq.com
 ```  
-# 依赖  
+### 依赖  
 ```bash  
 apt update && apt upgrade -y  
 
