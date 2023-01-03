@@ -5,7 +5,7 @@
 maox153@gmail.com
 ```
 
-#依赖  
+# 依赖  
 ```bash  
 apt update && apt upgrade -y  
 
