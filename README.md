@@ -5,7 +5,7 @@
 2. 3616439505@qq.com  
 3. 2234339463@qq.com  
 # 编译
-温馨提示：编译机尽量使用Ubuntu 20.04以上或Kali，其他Linux/GNU可能会编译失败
+温馨提示：编译机尽量使用Ubuntu 20.04以上或Kali，其他Linux/GNU均未测试
 ### 依赖：  
 ```bash  
 apt update && apt upgrade -y  
