@@ -5,7 +5,7 @@
 2. 3616439505@qq.com  
 3. 2234339463@qq.com  
 # 编译
-### 依赖  
+### 依赖：  
 ```bash  
 apt update && apt upgrade -y  
 
@@ -13,7 +13,7 @@ apt install -y git libssl-dev gcc-arm-linux-gnueabi clang build-essential libncu
 
 cd ~ && wget https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.0/clang+llvm-13.0.0-aarch64-linux-gnu.tar.xz && tar -xvf clang+llvm-13.0.0-aarch64-linux-gnu.tar.xz && rm -rf clang+llvm-13.0.0-aarch64-linux-gnu.tar.xz  
 ```  
-### 环境变量
+### 环境变量：  
 ```bash
 export PATH=/root/clang+llvm-13.0.0-aarch64-linux-gnu/bin:$PATH  
 export ARCH=arm64  
@@ -21,7 +21,7 @@ export SUBARCH=arm64
 export CROSS_COMPILE=aarch64-linux-gnu-  
 export CROSS_COMPILE_ARM32=arm-linux-gnueabi-  
 ```
-### 构建
+### 构建：  
 ```bash
 make clean && make mrproper && rm -rf out && mkdir -p out
 
