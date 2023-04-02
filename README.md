@@ -1,4 +1,5 @@
-# 适用于Realme X的Docker Linux内核（Test）  
+## 适用于Realme X的Docker Linux内核（已停更）
+    因为此内核的源码过旧，并且开启了所有内核选项，导致内核不稳定
 如果在使用Docker时出现问题，请在搜索引擎中寻找错误的解决方案，并向我们反馈   
 #### 反馈邮箱:  
 1. maox153@gmail.com  
