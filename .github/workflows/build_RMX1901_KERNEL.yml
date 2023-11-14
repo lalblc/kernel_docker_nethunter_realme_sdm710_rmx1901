@@ -46,8 +46,9 @@ jobs:
         rm -rf AnyKernel3/.github
         echo 258991411910
  
-        export VERSION=$(git rev-list --count HEAD)
-        echo "VER=$(($VERSION + 10200))" >> $GITHUB_OUTPUT
+        export VERSION=LSY
+        echo 258991411912
+        echo 123 >> $GITHUB_OUTPUT
         cd -
         echo 2589914119156
     - name: GetTime
