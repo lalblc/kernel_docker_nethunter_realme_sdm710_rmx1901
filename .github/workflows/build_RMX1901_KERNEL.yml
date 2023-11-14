@@ -48,7 +48,7 @@ jobs:
  
         export VERSION=LSY
         echo 258991411912
-        cd -
+       
         echo 2589914119156
     - name: GetTime
       id: get_time
