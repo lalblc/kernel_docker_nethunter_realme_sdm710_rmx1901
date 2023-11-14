@@ -41,8 +41,7 @@ jobs:
         git clone https://github.com/H1mJT/AnyKernel3 -b master --depth=1
         rm -rf AnyKernel3/.git
         rm -rf AnyKernel3/.github
-        git submodule sync
-        git submodule update --init --recursive
+ 
         export VERSION=$(git rev-list --count HEAD)
         echo "VER=$(($VERSION + 10200))" >> $GITHUB_OUTPUT
         cd -
