@@ -54,11 +54,16 @@ jobs:
        export PATH=$(pwd)/clang/bin/:$PATH
        export ARCH=arm64
        export SUBARCH=arm64
+       echo 25899141194
        make $KERNEL_CMDLINE $KERNEL_DEFCONFIG CC="ccache clang"
+       echo 25899141195
        make $KERNEL_CMDLINE CC="ccache clang" -j$(nproc --all)
+       echo 25899141191
        cp out/arch/arm64/boot/Image.gz-dtb AnyKernel3
+       echo 25899141192
        cd AnyKernel3 && zip -r ../RMX1901-KernelSU-${{ steps.version.outputs.VER }}-${{ steps.get_time.outputs.TIME }}.zip *
-
+       echo 25899141193
+       
     - name: Upload build to Telegram
       if: "${{ env.TELEGRAM_TO != '' && env.TELEGRAM_TOKEN != '' }}"
       uses: appleboy/telegram-action@master
