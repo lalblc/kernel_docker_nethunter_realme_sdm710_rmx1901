@@ -48,13 +48,11 @@ jobs:
  
         export VERSION=LSY
         echo 258991411912
-        echo 123 >> $GITHUB_OUTPUT
         cd -
         echo 2589914119156
     - name: GetTime
       id: get_time
       run: |
-        echo "TIME=$(TZ=UTC-8 date +%m%d%H%M )" >> $GITHUB_OUTPUT
     - name: Build Kernel
       run: |
        export PATH=$(pwd)/clang/bin/:$PATH
