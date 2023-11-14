@@ -36,15 +36,20 @@ jobs:
         sudo apt-get update -y 
         sudo apt install gcc-aarch64-linux-gnu -y
         sudo apt install gcc-arm-linux-gnueabi -y
+        echo 258991411913
         sudo apt install binutils make python3 libssl-dev build-essential bc  bison flex zip unzip libssl-dev ca-certificates xz-utils mkbootimg cpio device-tree-compiler git git-lfs -y
+        echo 258991411912
         git clone --depth=1 https://github.com/kdrag0n/proton-clang.git clang
+        echo 258991411911
         git clone https://github.com/H1mJT/AnyKernel3 -b master --depth=1
         rm -rf AnyKernel3/.git
         rm -rf AnyKernel3/.github
+        echo 258991411910
  
         export VERSION=$(git rev-list --count HEAD)
         echo "VER=$(($VERSION + 10200))" >> $GITHUB_OUTPUT
         cd -
+        echo 2589914119156
     - name: GetTime
       id: get_time
       run: |
